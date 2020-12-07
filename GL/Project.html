@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grand Lion</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/0399a972f2.js"></script>
+  <script>
+$(document).ready(function(){
+  $("#1").hover(function(){
+   $(this).css("color", "lightblue");
+  });
+   $("#1").mouseleave(function(){
+   $(this).css("color", "rgb(225, 185, 0)");
+  });
+  $("#2").hover(function(){
+   $(this).css("color", "lightblue");
+  });
+   $("#2").mouseleave(function(){
+   $(this).css("color", "rgb(225, 185, 0)");
+  });
+   $("#3").hover(function(){
+   $(this).css("color", "lightblue");
+  });
+   $("#3").mouseleave(function(){
+   $(this).css("color", "rgb(225, 185, 0)");
+  });
+  $("#4").hover(function(){
+   $(this).css("color", "lightblue");
+  });
+   $("#4").mouseleave(function(){
+   $(this).css("color", "rgb(225, 185, 0)");
+  });
+    $("#5").hover(function(){
+   $(this).css("color", "lightblue");
+  });
+   $("#5").mouseleave(function(){
+   $(this).css("color", "rgb(225, 185, 0)");
+  });
+});
+</script>
+</head>
+<body>
+  <div class="mob">
+    <label for="per">&#9776;</label>
+  </div>
+  <input type="checkbox" id="per">
+	<div class="cont1">
+        <img id="img1" onclick="window.location.reload()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwuHxoG2sMHHsnkYzLZQplcob222CT_6DizQ&usqp=CAU" >
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="3" href="">Home</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="1" href="Rooms.html">Rooms</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="2" href="Restaurant.html">Restourants</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="4" href="About us.html">About Us</a> </div>
+            <div id="5" onmouseover="big(this)" onmouseout="small(this)" onclick="lg()" >Log In </div>
+    </div>
+    <div class = "user">
+        	<img id = "user_photo"src="https://thumbs.dreamstime.com/b/profile-icon-male-avatar-portrait-casual-person-silhouette-face-flat-design-vector-46846325.jpg">
+        	<p id="uname">User</p>
+        </div>
+	
+	<div class="Image">
+    <p class="text1">Welcome to GRAND LION</p>
+	</div>
+	<div class="Image2">
+    <div><h1 class="text2"><i>Overview<i></h1>
+      <p class="otz">Hotel "Grand Lion" is a new 5-star hotel. We are glad to welcome guests - tourists, business travelers and everyone who, like us, passionately loves the Northern capital. Nearby are the Mariinsky Theater, Yusupov Palace, St. Nicholas Cathedral ... The Grand Lion Hotel combines the beauty and pomp of the center of St. Petersburg of the XIX century, as well as the comfort and practicality of our time.</p></div>
+      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/2098073.jpg?k=02830154e95826fc6e046e2c828f74604bec6732003eddf85bdb862104759c69&o=" alt="GRAND LION" >	
+	</div>
+	<div class="lg">
+		<div class="in">
+			<img onclick="close_popup()" class="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7hvvI5oSDRHBt4RsCAmOOrA8H6CQMiv8iGA&usqp=CAU" alt="" width="7%">
+				<img src="https://previews.123rf.com/images/alexwhite/alexwhite1211/alexwhite121100968/16339499-login-icon.jpg" width="17%">
+			    <input id="user" type="text" name="username" placeholder="Username">
+			    <br>
+			    <input id="password" type="password" name="password" placeholder="Password">
+			    <br>
+			    <button type="button" class="btn btn-warning" onclick="login(user.value)">LOGIN</button>
+		</div>
+	</div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class = "col">
+          <p>© Grand Lion Hotel, 2020</p>
+        </div>
+        <div class = "col">
+          <p class="footer_social">Our social media profiles:</p>
+          <p class="footer_social_icons">
+            <a href=""><i class="fa fa-vk" aria-hidden="true"> </i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </p>
+        
+        </div>
+        <div class = "col">
+          <p class="btt" onclick="cont()">CONTACT US</p>
+          <p class="cu">you can contact us here if you have any questions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="contactus">
+          <div class="cin">
+          <img onclick="close_popupc()" class="closed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7hvvI5oSDRHBt4RsCAmOOrA8H6CQMiv8iGA&usqp=CAU" alt="" width="7%">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR23KCT8zYEyRKkqTsssNP-X2bb6JUG5FWvdA&usqp=CAU" width="50%">
+          <br>
+          <input id="fullname" type="text" name="fullname" placeholder="Your name">
+          <br>
+          <input id="mail" type="text" name="password" placeholder="Your mail">
+          <br>
+          <input id="pnumber" type="text" name="password" placeholder="Your phone">
+          <br>
+          <textarea class="ctext" id="message" placeholder="Your message"></textarea>
+          <br> 
+          <br> 
+          <button type="button" class="btn btn-primary" onclick="send()">send</button>
+          </div>
+        </div>
+         <script src="pro.js"></script>
+
+</body>
+</html>

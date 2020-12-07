@@ -1,0 +1,116 @@
+*{
+    margin:0 auto;
+}
+body{
+    min-width: 500px;
+}
+.cont1{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    font-size: 200%; 
+	background-color: rgb(0, 0, 10);
+	color: rgb(225, 185, 0);	 
+}
+        .cont1 a{
+			color: rgb(225, 185, 0); 
+		}
+		.cont1 a:link{
+		text-decoration: none;	
+		}
+.cont1 img{
+   width: 100px;
+  }
+  .mob{
+    float: left;
+    display: none;
+    }
+    #per{
+        display: none;
+    }
+
+    label{
+        margin: 6px 0 0 20px;
+        font-size: 30px;
+        color: white;
+
+    }
+    @media (max-width: 700px){
+        .mob{
+            display: block;
+        }
+        label{
+            cursor: pointer;
+        }
+        .cont1{
+            display: none;
+            text-align: center;
+            padding-top: 60px;
+        }
+        #per:checked + .cont1{
+            display: block;
+
+    }
+}
+h2{
+    position: absolute;
+    top: 220px;
+    left: 580px;
+}
+.intro img{ 
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    left: 685px;
+}
+
+.container{
+    position: absolute;
+    top: 350px;
+    left: -250px;
+}
+.container2{
+    position: absolute;
+    top: 350px;
+    left: 550px;  
+}
+.card-img-top2{
+    height: 267px;
+}
+.container3{
+    position: absolute;
+    top: 350px;
+    left: 980px;
+    margin-bottom:100px;
+    
+}
+.footer1{
+    position: absolute;;
+    top: 1000px;
+    background-color: black;
+    color: white;
+    font-size:20px; 
+}
+.footer1 p{
+margin-left:300px;
+}
+.footer_social1{
+    position: absolute;
+    left: 500px;
+    bottom: 25px;
+}
+.footer_social_icons1{
+    position: relative;
+    bottom: 25px;
+    padding-left: 800px;
+    
+}
+.footer_social_icons1 a{
+    margin-left: 25px;
+}
+.c{
+    position: relative;
+    top:20px;
+}
+
+

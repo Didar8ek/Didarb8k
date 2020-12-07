@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" type="text/css" href="rooms.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/0399a972f2.js"></script>
+</head>
+<body>
+    <div class="mob">
+        <label for="per">&#9776;</label>
+      </div>
+      <input type="checkbox" id="per">
+        <div class="cont1">
+            <a href="Project.html"><img id="img1"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwuHxoG2sMHHsnkYzLZQplcob222CT_6DizQ&usqp=CAU" ></a>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="3" href="Project.html">Home</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="1" href="Rooms.html">Rooms</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="2" href="Restaurant.html">Restourants</a></div>
+            <div  onmouseover="big(this)" onmouseout="small(this)" ><a id="4" href="About us.html">About Us</a> </div>
+        </div>
+    <div class="exrooms">
+    <div class="intro">
+        <img src="data:image/png;base64,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" alt="icon">
+    </div>
+    <h2>Explore our Rooms</h2>
+    <div class="container">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="https://cf.bstatic.com/images/hotel/max1024x768/188/188921802.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">
+              Superior with 1 or 2 beds</h4>
+            <p class="card-text">Wi-Fi
+              Air conditioner
+              Safe</p>
+            <a href="#" class="btn btn-primary stretched-link">Booking</a>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="card" style="width:400px">
+          <img class="card-img-top2" src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/274795274.jpg?k=86df6d55d3540eaadae1c83517f0c16f88b8ed20825bc75e0b4e2d276140e480&o=" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Double Room</h4>
+            <p class="card-text">Wi-Fi
+              Air conditioner
+              TV set</p>
+            <a href="#" class="btn btn-primary stretched-link">Booking</a>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="https://cf.bstatic.com/images/hotel/max1280x900/188/188921825.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Superior with large bed</h4>
+            <p class="card-text">Smart TV
+              King bed
+              Hair dryer</p>
+            <a href="#" class="btn btn-primary stretched-link">Booking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ <div class="footer1">
+      <div class="container1">
+        <div class="row">
+          <div class = "col">
+            <p class="c">© Grand Lion Hotel, 2020</p>
+          </div>
+          <div class = "col">
+            <p class="footer_social1">Our social media profiles:</p>
+            <p class="footer_social_icons1">
+              <a href=""><i class="fa fa-vk" aria-hidden="true"> </i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-telegram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </p>
+          
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="pro.js"></script>
+</body>
+</html>
